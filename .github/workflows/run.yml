@@ -7,8 +7,7 @@ on:
     types: started
   workflow_dispatch:
   schedule:
-    - cron: '0 3 * * *'  # 使用单引号，避免解析错误
- jobs:
+    - cron: 0 3 * * * jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     environment: user
